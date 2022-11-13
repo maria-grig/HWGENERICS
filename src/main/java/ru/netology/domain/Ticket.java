@@ -1,6 +1,6 @@
 package ru.netology.domain;
 
-public class Ticket implements Comparable <Ticket>{
+public class Ticket implements Comparable<Ticket> {
     private int id;
     private int price;
     private String departureAirport;
@@ -10,7 +10,7 @@ public class Ticket implements Comparable <Ticket>{
     public Ticket(int id, int price, String departureAirport, String arrivalAirport, int time) {
         this.id = id;
         this.price = price;
-        this.departureAirport= departureAirport;
+        this.departureAirport = departureAirport;
         this.arrivalAirport = arrivalAirport;
         this.time = time;
     }

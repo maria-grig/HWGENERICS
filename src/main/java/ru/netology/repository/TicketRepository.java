@@ -17,6 +17,7 @@ public class TicketRepository {
     public Ticket[] findAll() {
         return tickets;
     }
+
     public void removeById(int id) {
         if (findById(id) == null) {
             throw new NotFoundException(

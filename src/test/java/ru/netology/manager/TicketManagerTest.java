@@ -35,7 +35,7 @@ class TicketManagerTest {
         manager.add(ticket10);
 
         Ticket[] expected = {ticket8, ticket1};
-        Ticket[] actual = manager.searchBy("LED","ATH");
+        Ticket[] actual = manager.searchBy("LED", "ATH");
         assertArrayEquals(expected, actual);
     }
 
@@ -53,7 +53,7 @@ class TicketManagerTest {
         manager.add(ticket9);
         manager.add(ticket10);
 
-        Ticket[] expected = { };
+        Ticket[] expected = {};
         Ticket[] actual = manager.searchBy("CFU", "LED");
 
         assertArrayEquals(expected, actual);
